@@ -3,7 +3,7 @@ import Logo from "../assets/logo_sportsee.png";
 
 const NavbarTop = () => {
   return (
-    <header>
+    <header className="navbar_top">
       <img src={Logo} alt="logo SportSee" className="logo" />
       <nav>
         <ul>
