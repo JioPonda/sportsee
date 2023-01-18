@@ -5,11 +5,13 @@ import Dashboard from "./Dashboard";
 
 const Layout = () => {
   return (
-    <>
+    <div className="layout">
       <NavbarTop />
-      <NavbarLeft />
-      <Dashboard />
-    </>
+      <div className="layout_bottom">
+        <NavbarLeft />
+        <Dashboard />
+      </div>
+    </div>
   );
 };
 

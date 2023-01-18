@@ -1,0 +1,33 @@
+.navbar_top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #020203;
+  height: 150px;
+
+  img {
+    height: 100px;
+    width: auto;
+    margin: 0 0 0 1vw;
+  }
+  img:hover {
+    cursor: pointer;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    ul {
+      display: flex;
+      list-style: none;
+      li {
+        font-size: 1.5em;
+        margin-left: 14vw;
+      }
+      li:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

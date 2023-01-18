@@ -3,16 +3,13 @@ import React from "react";
 const Card = ({
   IconCalories,
   NumberCalories,
-  TextCalories,
   IconProteins,
   NumberProteines,
-  TextProteines,
   IconGlucides,
   NumberGlucides,
-  TextGlucides,
   IconLipides,
   NumberLipides,
-  TextLipides,
+  TextCard,
 }) => {
   return (
     <div className="card">
@@ -24,9 +21,7 @@ const Card = ({
       <p className="card_number">
         {NumberCalories || NumberProteines || NumberGlucides || NumberLipides}
       </p>
-      <p className="card_text">
-        {TextCalories || TextProteines || TextGlucides || TextLipides}
-      </p>
+      <p className="card_text">{TextCard}</p>
     </div>
   );
 };
