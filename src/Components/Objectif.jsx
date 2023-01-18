@@ -3,10 +3,10 @@ import Objectifchart from "./Objectifchart";
 
 const Objectif = () => {
   return (
-    <div>
-      <p>Durée moyenne des sessions</p>
+    <div className="Objectif">
+      <p className="duration">Durée moyenne des sessions</p>
       <Objectifchart />
-      <p>L M M J V S D</p>
+      <p className="days">L M M J V S D</p>
     </div>
   );
 };

@@ -3,19 +3,20 @@ import WeigthChart from "./Weigthchart";
 
 const Activity = () => {
   const Dot = <i className="fa-solid fa-circle Dot"></i>;
+  const Dot2 = <i className="fa-solid fa-circle Dot2"></i>;
 
   return (
     <div className="activity">
-      <h2>Activité quotidienne</h2>
-      <div className="activity_weight">
+      <div className="activity_text">
+        <h2>Activité quotidienne</h2>
         {Dot}
-        <p>Poids(kg)</p>
+        <p className="kg">Poids(kg)</p>
+        {Dot2}
+        <p className="cal">Calories brûlées(Kcal)</p>
       </div>
-      <div className="activity_calories">
-        {Dot}
-        <p>Calories brûlées(Kcal)</p>
+      <div className="weigth_chart">
+        <WeigthChart />
       </div>
-      <WeigthChart />
     </div>
   );
 };

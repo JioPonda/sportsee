@@ -18,10 +18,12 @@ const Card = ({
         alt="icon"
         className="card_icon"
       />
-      <p className="card_number">
-        {NumberCalories || NumberProteines || NumberGlucides || NumberLipides}
-      </p>
-      <p className="card_text">{TextCard}</p>
+      <div className="card_infos">
+        <p className="card_number">
+          {NumberCalories || NumberProteines || NumberGlucides || NumberLipides}
+        </p>
+        <p className="card_text">{TextCard}</p>
+      </div>
     </div>
   );
 };

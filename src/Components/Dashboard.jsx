@@ -13,24 +13,42 @@ import Radar from "./Radar";
 const Dashboard = () => {
   return (
     <div className="dashboard">
-      <div>
+      <div className="dashboard_top">
         <NameDashBoard />
-        <Activity />
       </div>
-      <div>
-        <Objectif />
-        <Radar />
-        <Kpi />
-      </div>
-      <div>
-        <Card IconCalories={IconCal} NumberCalories="" TextCard={"Calories"} />
-        <Card
-          IconProteins={IconProt}
-          NumberProteines=""
-          TextCard={"Proteines"}
-        />
-        <Card IconGlucides={IconGlu} NumberGlucides="" TextCard={"Glucides"} />
-        <Card IconLipides={IconLip} NumberLipides="" TextLipides={"Lipides"} />
+      <div className="dashboard_bottom">
+        <div className="dashboard_left">
+          <Activity />
+          <div className="dashboard_left_bottom">
+            <Objectif />
+            <Radar />
+            <Kpi />
+          </div>
+        </div>
+        <div className="dashboard_right">
+          <div className="dashboard_card">
+            <Card
+              IconCalories={IconCal}
+              NumberCalories="1,930Kcal"
+              TextCard={"Calories"}
+            />
+            <Card
+              IconProteins={IconProt}
+              NumberProteines="155g"
+              TextCard={"Proteines"}
+            />
+            <Card
+              IconGlucides={IconGlu}
+              NumberGlucides="290g"
+              TextCard={"Glucides"}
+            />
+            <Card
+              IconLipides={IconLip}
+              NumberLipides="50g"
+              TextCard={"Lipides"}
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

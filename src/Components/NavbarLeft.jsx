@@ -7,14 +7,16 @@ import DumbbellIcon from "../assets/dumbbell_icon.png";
 const NavbarLeft = () => {
   return (
     <div className="navbar_left">
-      <img
-        src={MeditationIcon}
-        alt="Meditation icon"
-        className="meditation_icon"
-      />
-      <img src={SwimmingIcon} alt="Swimming icon" className="swimming_icon" />
-      <img src={BikeIcon} alt="Bike icon" className="bike_icon" />
-      <img src={DumbbellIcon} alt="Dumbbell icon" className="dumbbell_icon" />
+      <div className="navbar_left_icon">
+        <img
+          src={MeditationIcon}
+          alt="Meditation icon"
+          className="meditation_icon"
+        />
+        <img src={SwimmingIcon} alt="Swimming icon" className="swimming_icon" />
+        <img src={BikeIcon} alt="Bike icon" className="bike_icon" />
+        <img src={DumbbellIcon} alt="Dumbbell icon" className="dumbbell_icon" />
+      </div>
       <p>Copiryght, SportSee 2020</p>
     </div>
   );

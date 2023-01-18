@@ -1,0 +1,28 @@
+.navbar_left {
+  display: flex;
+  flex-direction: column;
+  background-color: #020203;
+  align-items: center;
+  height: 110vh;
+  width: 5vw;
+
+  .navbar_left_icon {
+    margin-top: 256px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  img {
+    height: 64px;
+    width: auto;
+    margin: 20px 0;
+  }
+
+  p {
+    font-size: 0.75em;
+    color: #fff;
+    margin-top: 150px;
+    white-space: nowrap;
+    transform: rotate(-90deg);
+  }
+}
