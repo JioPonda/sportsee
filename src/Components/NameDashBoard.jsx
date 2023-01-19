@@ -1,10 +1,12 @@
 import React from "react";
 
-const NameDashBoard = () => {
+const NameDashBoard = ({ firstName }) => {
   return (
     <div className="name_dashboard">
-      <p className="hello">Bonjour Utilisateur</p>
-      <p>Félicitations ! Vous avez explosé vos objectifs hier 👏 </p>
+      <div>
+        <p className="hello">Bonjour Utilisateur{firstName}</p>
+        <p>Félicitations ! Vous avez explosé vos objectifs hier 👏 </p>
+      </div>
     </div>
   );
 };

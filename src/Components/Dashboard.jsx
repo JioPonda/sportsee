@@ -9,10 +9,19 @@ import IconProt from "../assets/protein_icon.png";
 import IconGlu from "../assets/carbs_icon.png";
 import IconLip from "../assets/fat_icon.png";
 import Radar from "./Radar";
+// import Username from "../data/user_main_data.json";
 
 const Dashboard = () => {
   return (
     <div className="dashboard">
+      {/* <div className="dashboard_top">
+        {Username.map((username) => (
+          <NameDashBoard
+            key={username.id}
+            firstName={username.userInfos.firstName}
+          />
+        ))}
+      </div> */}
       <div className="dashboard_top">
         <NameDashBoard />
       </div>
