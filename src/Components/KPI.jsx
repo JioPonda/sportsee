@@ -3,9 +3,10 @@ import Kpichart from "./Kpichart";
 
 const Kpi = () => {
   return (
-    <div>
-      <p>Score</p>
-      <p>data% de votre objectif</p>
+    <div className="kpi">
+      <p className="score">Score</p>
+      <p className="percent">12%</p>
+      <p className="text"> de votre objectif</p>
       <Kpichart />
     </div>
   );

@@ -1,7 +1,7 @@
 .navbar_left {
   display: flex;
   flex-direction: column;
-  background-color: #020203;
+  background-color: $bgc_nav;
   align-items: center;
   height: 110vh;
   width: 5vw;
@@ -20,7 +20,7 @@
 
   p {
     font-size: 0.75em;
-    color: #fff;
+    color: $white;
     margin-top: 150px;
     white-space: nowrap;
     transform: rotate(-90deg);

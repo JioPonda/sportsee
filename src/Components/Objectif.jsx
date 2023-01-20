@@ -3,7 +3,7 @@ import Objectifchart from "./Objectifchart";
 
 const Objectif = () => {
   return (
-    <div className="Objectif">
+    <div className="objectif">
       <p className="duration">Durée moyenne des sessions</p>
       <Objectifchart />
       <p className="days">L M M J V S D</p>

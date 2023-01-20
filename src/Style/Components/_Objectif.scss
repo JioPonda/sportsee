@@ -1,0 +1,24 @@
+.objectif {
+  display: flex;
+  flex-direction: column;
+  height: 263px;
+  width: 15vw;
+  margin: 30px 0 0 6vw;
+  border-radius: 5px;
+  background-color: $bgc_objectif;
+  .duration {
+    margin: 30px 0 0 2vw;
+    height: 48px;
+    width: 147px;
+    color: #ffffff;
+    opacity: 0.5;
+    font-size: 0.938;
+  }
+  .days {
+    position: absolute;
+    word-spacing: 26px;
+    color: #ffffff;
+    opacity: 0.5;
+    margin: 240px 0 0 0.7%;
+  }
+}

@@ -1,13 +1,8 @@
-// @import url("./Settings");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("../Style/Components/Layout.scss");
-@import url("../Style/Components/NavbarTop.scss");
-@import url("../Style/Components/NavbarLeft.scss");
-@import url("../Style/Components/Objectif.scss");
-@import url("../Style/Components/Dashboard.scss");
-
-body {
-  font-family: "Roboto";
-  margin: 0;
-  padding: 0;
-}
+@import "./_Settings";
+@import "../Style/Components/_Layout.scss";
+@import "../Style/Components/_NavbarTop.scss";
+@import "../Style/Components/_NavbarLeft.scss";
+@import "../Style/Components/_Objectif.scss";
+@import "../Style/Components/_Radar.scss";
+@import "../Style/Components/_Kpi.scss";
+@import "../Style/Components/_Dashboard.scss";

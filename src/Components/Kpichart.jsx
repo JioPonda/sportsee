@@ -5,7 +5,7 @@ const data = [
   { name: "Group A", value: 500 },
   { name: "Group B", value: 100 },
 ];
-const COLORS = ["#0088FE", "#FFF"];
+const COLORS = ["#ff0000", "#FFF"];
 
 export default class Example extends PureComponent {
   render() {
@@ -13,11 +13,10 @@ export default class Example extends PureComponent {
       <PieChart width={250} height={263} onMouseEnter={this.onPieEnter}>
         <Pie
           data={data}
-          cx={120}
+          cx={100}
           cy={100}
           innerRadius={60}
           outerRadius={80}
-          fill="#8884d8"
           paddingAngle={5}
           dataKey="value"
         >

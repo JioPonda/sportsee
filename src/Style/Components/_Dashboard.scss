@@ -3,7 +3,7 @@
   flex-direction: column;
 
   .dashboard_top {
-    width: 100vw;
+    width: 25vw;
     margin: 0px 0 0 6vw;
     .hello {
       font-size: 3em;
@@ -25,7 +25,7 @@
         flex-direction: column;
         height: 320px;
         width: 80%;
-        background: #fbfbfb;
+        background: $bgc_card;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
         border-radius: 10px;
         margin: 77px 0 0 6vw;
@@ -36,29 +36,29 @@
           h2 {
             margin: 32px 0 0 3vw;
             font-size: 0.938em;
-            color: #20253a;
+            color: $activity_text;
           }
           .Dot {
             position: absolute;
             margin: 32px 0 0 35%;
-            color: #20253a;
+            color: $activity_dot1;
           }
           .Dot2 {
             position: absolute;
             margin: 32px 0 0 45%;
-            color: #e60000;
+            color: $activity_dot2;
           }
           .kg {
             position: absolute;
             margin: 32px 0 0 36%;
             font-size: 0.875em;
-            color: #74798c;
+            color: $activity_dot_text;
           }
           .cal {
             position: absolute;
             margin: 32px 0 0 46%;
             font-size: 0.875em;
-            color: #74798c;
+            color: $activity_dot_text;
           }
         }
       }
@@ -73,20 +73,21 @@
     }
 
     .dashboard_right {
-      width: 30vw;
+      width: 5vw;
     }
 
     .dashboard_card {
       display: flex;
       flex-direction: column;
       margin: 50px 0 0 0;
+      width: 15vw;
       .card {
         display: flex;
         flex-direction: row;
         height: 124px;
         width: 18vw;
         margin: 25px 0 25px 0;
-        background-color: #fbfbfb;
+        background-color: $bgc_card;
         .card_icon {
           margin: 32px 0 32px 2vw;
           height: 60px;
@@ -96,14 +97,14 @@
           display: flex;
           flex-direction: column;
           .card_number {
-            color: #282d30;
+            color: $card_number;
             font-weight: 700;
             font-size: 1.25em;
             margin: 39px 0 0 1vw;
           }
           .card_text {
             font-size: 0.875em;
-            color: #74798c;
+            color: $card_text;
             margin: 5px 0 32px 1vw;
           }
         }

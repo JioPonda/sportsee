@@ -55,14 +55,18 @@ const data = [
   },
 ];
 
+// const linearGradient = {
+//   stroke: `linear-gradient(to right, #FFF 0%, #FFF 50%, #FFF 50%, #FFF 100%)`,
+// };
+
 export default class Example extends PureComponent {
   static demoUrl = "https://codesandbox.io/s/tiny-line-chart-r5z0f";
 
   render() {
     return (
-      <ResponsiveContainer width="100%" height="30%">
+      <ResponsiveContainer width="100%" height="80%">
         <LineChart width={300} height={100} data={data}>
-          <Line type="monotone" dataKey="pv" stroke="#8884d8" strokeWidth={2} />
+          <Line type="monotone" dataKey="pv" stroke="#FFF" strokeWidth={4} />
         </LineChart>
       </ResponsiveContainer>
     );
