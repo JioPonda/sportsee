@@ -1,7 +1,7 @@
 import React from "react";
 import NavbarTop from "./NavbarTop";
 import NavbarLeft from "./NavbarLeft";
-import Dashboard from "./Dashboard";
+import User from "./Dashboard";
 
 const Layout = () => {
   return (
@@ -9,7 +9,7 @@ const Layout = () => {
       <NavbarTop />
       <div className="layout_bottom">
         <NavbarLeft />
-        <Dashboard />
+        <User />
       </div>
     </div>
   );

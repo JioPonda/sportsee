@@ -1,0 +1,15 @@
+.hello_user {
+  display: flex;
+  flex-direction: row;
+  .hello {
+    font-size: 3em;
+  }
+  .user {
+    color: $user_color;
+    font-size: 3em;
+    margin-left: 1.5vw;
+  }
+}
+p {
+  font-size: 1.125em;
+}

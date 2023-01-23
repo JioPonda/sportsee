@@ -1,17 +1,29 @@
 .kpi {
   height: 263px;
-  width: 15vw;
-  background-color: #fbfbfb;
+  width: 19.5vw;
+  background-color: $bgc_kpi;
   margin: 30px 0 0 2vw;
   border-radius: 5px;
-  color: red;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.09);
   .score {
-    color: #20253a;
+    color: $score_color;
+    position: absolute;
+    font-weight: 500;
+    font-size: 0.938em;
+    margin: 24px 0 0 2vw;
   }
   .percent {
-    color: #282d30;
+    color: $percent_color;
+    display: flex;
+    position: absolute;
+    font-size: 1.625em;
+    margin: 110px 0 0 8vw;
   }
   .text {
-    color: #74798c;
+    color: $text_color;
+    position: absolute;
+    margin: 140px 0 0 5.8vw;
+    font-size: 1em;
+    font-weight: 500;
   }
 }

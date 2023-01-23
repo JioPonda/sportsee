@@ -1,15 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 //Body
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #e5e5e5;
 }
 $white: #fff;
 
 // NAV
 $bgc_nav: #020203;
+
+// USER
+$user_color: #ff0101;
 
 // ACTIVITY
 $activity_dot1: #282d30;
@@ -19,6 +23,15 @@ $activity_dot_text: #74798c;
 
 // OBJECTIF
 $bgc_objectif: #ff0000;
+
+// RADAR
+$bgc_radar: #282d30;
+
+// KPI
+$bgc_kpi: #fbfbfb;
+$score_color: #20253a;
+$percent_color: #282d30;
+$text_color: #74798c;
 
 // CARDS
 $bgc_card: #fbfbfb;

@@ -1,0 +1,30 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  height: 124px;
+  width: 18vw;
+  margin: 15px 0 25px 0;
+  border-radius: 5px;
+  background-color: $bgc_card;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.09);
+  .card_icon {
+    margin: 32px 0 32px 2vw;
+    height: 60px;
+    width: auto;
+  }
+  .card_infos {
+    display: flex;
+    flex-direction: column;
+    .card_number {
+      color: $card_number;
+      font-weight: 700;
+      font-size: 1.25em;
+      margin: 39px 0 0 1vw;
+    }
+    .card_text {
+      font-size: 0.875em;
+      color: $card_text;
+      margin: 5px 0 32px 1vw;
+    }
+  }
+}

@@ -6,84 +6,10 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
   ResponsiveContainer,
 } from "recharts";
 
-const data = [
-  {
-    date: "2000-01",
-    uv: 4000,
-    pv: 2400,
-    amt: 2400,
-  },
-  {
-    date: "2000-02",
-    uv: 3000,
-    pv: 1398,
-    amt: 2210,
-  },
-  {
-    date: "2000-03",
-    uv: 2000,
-    pv: 9800,
-    amt: 2290,
-  },
-  {
-    date: "2000-04",
-    uv: 2780,
-    pv: 3908,
-    amt: 2000,
-  },
-  {
-    date: "2000-05",
-    uv: 1890,
-    pv: 4800,
-    amt: 2181,
-  },
-  {
-    date: "2000-06",
-    uv: 2390,
-    pv: 3800,
-    amt: 2500,
-  },
-  {
-    date: "2000-07",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
-  },
-  {
-    date: "2000-08",
-    uv: 4000,
-    pv: 2400,
-    amt: 2400,
-  },
-  {
-    date: "2000-09",
-    uv: 3000,
-    pv: 1398,
-    amt: 2210,
-  },
-  {
-    date: "2000-10",
-    uv: 2000,
-    pv: 9800,
-    amt: 2290,
-  },
-  {
-    date: "2000-11",
-    uv: 2780,
-    pv: 3908,
-    amt: 2000,
-  },
-  {
-    date: "2000-12",
-    uv: 1890,
-    pv: 4800,
-    amt: 2181,
-  },
-];
+import Data from "../data/user_activity.json";
 
 const monthTickFormatter = (tick) => {
   const date = new Date(tick);
@@ -112,16 +38,17 @@ const renderQuarterTick = (tickProps) => {
   }
   return null;
 };
+
 export default class Example extends PureComponent {
   static demoUrl = "https://codesandbox.io/s/bar-chart-with-double-xaxis-dfug7";
 
   render() {
     return (
-      <ResponsiveContainer width="30%" aspect={3}>
+      <ResponsiveContainer width="100%" aspect={4}>
         <BarChart
           width={500}
           height={300}
-          data={data}
+          data={Data}
           margin={{
             top: 5,
             right: 30,
@@ -129,23 +56,22 @@ export default class Example extends PureComponent {
             bottom: 5,
           }}
         >
-          <CartesianGrid strokeDasharray="3 3" />
+          <CartesianGrid strokeDasharray="3 1" />
           <XAxis dataKey="date" tickFormatter={monthTickFormatter} />
           <XAxis
             dataKey="date"
             axisLine={false}
             tickLine={false}
-            interval={0}
+            // interval={0}
             tick={renderQuarterTick}
             height={1}
-            scale="band"
-            xAxisId="quarter"
+            // scale="band"
+            // xAxisId="quarter"
           />
           <YAxis />
           <Tooltip />
-          <Legend />
-          <Bar dataKey="pv" fill="#8884d8" />
-          <Bar dataKey="uv" fill="#82ca9d" />
+          <Bar dataKey="Kcal" fill="#E60000" className="kcal_bar" />
+          <Bar dataKey="Kg" fill="#282D30" className="kg_bar" />
         </BarChart>
       </ResponsiveContainer>
     );
