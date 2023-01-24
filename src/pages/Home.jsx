@@ -1,15 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import userData from "../data/user_main_data.json";
 
 const Home = () => {
+  document.tilte = "HOME";
   return (
     <div>
-      <Link to={`/user/id=12`}>
-        <p> id 12</p>
-      </Link>
-      <Link to={`/user/id=18`}>
-        <p> id 18</p>
-      </Link>
+      {userData.map((user) => (
+        <Link key={user.id} to={`/user/${user.id}`}>
+          <p>user id</p>
+        </Link>
+      ))}
     </div>
   );
 };

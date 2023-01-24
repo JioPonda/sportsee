@@ -1,21 +1,18 @@
 import React from "react";
-// import { Routes, Route } from "react-router-dom";
-// import Home from "./pages/Home";
-import Layout from "./Components/Layout";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Dashboard from "./pages/Dashboard";
 
-function App() {
-  return <Layout />;
-}
-
-// function App() {
-//   return (
-//     <>
-//       <Routes>
-//         <Route index element={<Home />} />
-//         <Route path="`/user/:id`" element={<Layout />} />
-//       </Routes>
-//     </>
-//   );
-// }
+const App = () => {
+  return (
+    <>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/Home" element={<Home />} />
+        <Route path={`/user/:id`} element={<Dashboard />} />
+      </Routes>
+    </>
+  );
+};
 
 export default App;

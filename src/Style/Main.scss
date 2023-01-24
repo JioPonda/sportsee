@@ -2,9 +2,9 @@
 @import "./_Settings";
 
 //   Layout
-@import "../Style/Components/_Layout.scss";
 @import "../Style/Components/_NavbarTop.scss";
 @import "../Style/Components/_NavbarLeft.scss";
+@import "../Style/Components/_Dashboard.scss";
 
 // Dashboard
 @import "../Style/Components/_Namedashboard.scss";
@@ -13,4 +13,3 @@
 @import "../Style/Components/_Radar.scss";
 @import "../Style/Components/_Kpi.scss";
 @import "../Style/Components/_Card.scss";
-@import "../Style/Components/_Dashboard.scss";

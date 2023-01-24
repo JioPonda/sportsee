@@ -1,19 +1,6 @@
 import React, { PureComponent } from "react";
-import {
-  LineChart,
-  Line,
-  // XAxis,
-  // YAxis,
-  // CartesianGrid,
-  // Tooltip,
-  // Legend,
-  ResponsiveContainer,
-} from "recharts";
+import { LineChart, Line, ResponsiveContainer } from "recharts";
 import Objectifdata from "../data/user_average_sessions.json";
-
-// const linearGradient = {
-//   stroke: `linear-gradient(to right, #FFF 0%, #FFF 50%, #FFF 50%, #FFF 100%)`,
-// };
 
 export default class Example extends PureComponent {
   static demoUrl = "https://codesandbox.io/s/tiny-line-chart-r5z0f";
