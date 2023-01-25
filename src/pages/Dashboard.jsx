@@ -9,7 +9,7 @@ import NavbarLeft from "../Components/NavbarLeft";
 import NameDashBoard from "../Components/NameDashBoard";
 import Activity from "../Components/Activity";
 import Kpi from "../Components/Kpi";
-import Radar from "../Components/Radar";
+import Radarperf from "../Components/Radarperf";
 import Objectif from "../Components/Objectif";
 import Card from "../Components/Card";
 
@@ -52,7 +52,7 @@ export default function Dashboard() {
                 <Activity />
                 <div className="dashboard_left_bottom">
                   <Objectif />
-                  <Radar />
+                  <Radarperf />
                   <Kpi score={userScore} />
                 </div>
               </div>
