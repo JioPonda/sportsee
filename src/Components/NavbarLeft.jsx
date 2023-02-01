@@ -1,8 +1,8 @@
 import React from "react";
-import MeditationIcon from "../assets/meditation_icon.png";
-import SwimmingIcon from "../assets/swimming_icon.png";
-import BikeIcon from "../assets/bike_icon.png";
-import DumbbellIcon from "../assets/dumbbell_icon.png";
+import MeditationIcon from "../Icon/meditation_icon.png";
+import SwimmingIcon from "../Icon/swimming_icon.png";
+import BikeIcon from "../Icon/bike_icon.png";
+import DumbbellIcon from "../Icon/dumbbell_icon.png";
 
 const NavbarLeft = () => {
   return (

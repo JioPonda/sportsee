@@ -1,16 +1,13 @@
 import React from "react";
 
-const Card = ({
+function Card({
   IconCalories,
-  NumberCalories,
   IconProteins,
-  NumberProteines,
   IconGlucides,
-  NumberGlucides,
   IconLipides,
-  NumberLipides,
+  keyData,
   TextCard,
-}) => {
+}) {
   return (
     <div className="card">
       <img
@@ -19,13 +16,11 @@ const Card = ({
         className="card_icon"
       />
       <div className="card_infos">
-        <p className="card_number">
-          {NumberCalories || NumberProteines || NumberGlucides || NumberLipides}
-        </p>
+        <p className="card_number">{keyData?.calorieCount}</p>
         <p className="card_text">{TextCard}</p>
       </div>
     </div>
   );
-};
+}
 
 export default Card;

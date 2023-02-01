@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/logo_sportsee.png";
+import Logo from "../Image/logo_sportsee.png";
 
 const NavbarTop = () => {
   return (

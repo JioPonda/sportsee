@@ -1,18 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import userData from "../data/user_main_data.json";
 
-const Home = () => {
-  document.tilte = "HOME";
+function Home() {
   return (
     <div>
-      {userData.map((user) => (
-        <Link key={user.id} to={`/user/${user.id}`}>
-          <p>user id</p>
-        </Link>
-      ))}
+      <Link to={`/user/12`}>
+        <em>Utilisateur</em> <em>12</em>
+      </Link>
+      <Link to={"/user/18"}>
+        <em>Utilisateur</em> <em>18</em>
+      </Link>
+      <br />
+      <br />
+      <label>
+        Mocked
+        <input type="checkbox" id="mocked" />
+      </label>
     </div>
   );
-};
-
+}
 export default Home;
