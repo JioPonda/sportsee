@@ -4,7 +4,21 @@ import {
   RadialBarChart,
   RadialBar,
   PolarAngleAxis,
+  Legend,
 } from "recharts";
+
+const CustomizedLegend = ({ payload }) => {
+  if (payload && payload.length) {
+    return (
+      <div className="custom-legend">
+        <div className="score">Score</div>
+        <h2 className="percent">{payload[0].value + "%"}</h2>
+        <span className="text">de votre objectif</span>
+      </div>
+    );
+  }
+  return null;
+};
 
 function Score({ score }) {
   const scorePercent = score * 100;
@@ -12,9 +26,6 @@ function Score({ score }) {
 
   return (
     <div className="kpi">
-      <p className="score">Score</p>
-      <p className="percent">{score}%</p>
-      <p className="text"> de votre objectif</p>
       <ResponsiveContainer>
         <RadialBarChart
           innerRadius={800}
@@ -37,6 +48,16 @@ function Score({ score }) {
             fill="#ff0000"
             cornerRadius={10}
             background={{ fill: "#fff" }}
+          />
+          <Legend
+            iconSize={10}
+            width={20}
+            height={20}
+            layout="vertical"
+            verticalAlign="top"
+            align="center"
+            payload={value}
+            content={<CustomizedLegend />}
           />
         </RadialBarChart>
       </ResponsiveContainer>

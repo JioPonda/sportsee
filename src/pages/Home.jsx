@@ -10,12 +10,6 @@ function Home() {
       <Link to={"/user/18"}>
         <em>Utilisateur</em> <em>18</em>
       </Link>
-      <br />
-      <br />
-      <label>
-        Mocked
-        <input type="checkbox" id="mocked" />
-      </label>
     </div>
   );
 }

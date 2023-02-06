@@ -1,10 +1,9 @@
 import axios from "axios";
 import { useQuery } from "react-query";
+import { SPORTSEE_API_HOST, SPORTSEE_MOKED } from "../Data/Api";
 
 const getUserPerformance = async (userId) => {
-  const { data } = await axios.get(
-    `http://localhost:3000/user/${userId}/performance`
-  );
+  const { data } = await axios.get(`${SPORTSEE_MOKED}/${userId}/performance`);
   return data;
 };
 

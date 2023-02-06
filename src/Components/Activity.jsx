@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  Tooltip,
   ResponsiveContainer,
   BarChart,
   CartesianGrid,
@@ -7,6 +8,18 @@ import {
   YAxis,
   Bar,
 } from "recharts";
+
+const CustomTooltip = ({ payload, active }) => {
+  if (active && payload && payload.length) {
+    return (
+      <div className="custom-tooltip-line">
+        <p className="desc">{payload[0].value + "kg"}</p>
+        <p className="desc">{payload[1].value + "Kcal"}</p>
+      </div>
+    );
+  }
+  return null;
+};
 
 function Activity({ activity }) {
   const Dot = <i className="fa-solid fa-circle Dot"></i>;
@@ -57,6 +70,12 @@ function Activity({ activity }) {
             tick={false}
             hide={true}
             yAxisId="cl"
+          />
+          <Tooltip
+            cursor={{ fill: "#C4C4C4", opacity: "0.5" }}
+            wrapperStyle={{ outline: "none" }}
+            content={<CustomTooltip />}
+            offset={35}
           />
 
           <Bar

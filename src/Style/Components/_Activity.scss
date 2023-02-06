@@ -43,3 +43,16 @@
 .weigth_chart {
   margin: 50px 0 0 0vw;
 }
+.custom-tooltip-line {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #e60000;
+  .desc {
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 5px;
+  }
+}

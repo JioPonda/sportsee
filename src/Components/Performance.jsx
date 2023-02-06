@@ -17,7 +17,7 @@ function Performance({ performance }) {
             dataKey="kind"
             tickLine={false}
             data={performance}
-            tick={{ fill: "white", fontSize: 12, angle: 0 }}
+            tick={{ fill: "#FFF", fontSize: 12, angle: 0 }}
           />
 
           <Radar

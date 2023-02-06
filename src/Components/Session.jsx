@@ -30,7 +30,6 @@ function Session({ sessions }) {
           />
         </LineChart>
       </ResponsiveContainer>
-      <p className="days">L M M J V S D</p>
     </div>
   );
 }
