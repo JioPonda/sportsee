@@ -5,6 +5,7 @@ import IconProt from "../Icon/protein_icon.png";
 import IconGlu from "../Icon/carbs_icon.png";
 import IconLip from "../Icon/fat_icon.png";
 
+// Component for the right side card with icon and information
 function InfoCard({ keyData }) {
   return (
     <>

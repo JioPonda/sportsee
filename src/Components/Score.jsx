@@ -20,6 +20,8 @@ const CustomizedLegend = ({ payload }) => {
   return null;
 };
 
+// Component for performance user
+
 function Score({ score }) {
   const scorePercent = score * 100;
   const value = [{ value: scorePercent }];

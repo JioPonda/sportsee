@@ -7,6 +7,7 @@ import {
   Radar,
 } from "recharts";
 
+// Component for performance user
 function Performance({ performance }) {
   return (
     <div className="radar">
