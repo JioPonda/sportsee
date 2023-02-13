@@ -7,7 +7,7 @@ const NameDashBoard = ({ user }) => {
       <div>
         <div className="hello_user">
           <p className="hello">Bonjour</p>
-          <p className="user">{user.firstName}</p>
+          <p className="user">{user}</p>
         </div>
         <p>Félicitations ! Vous avez explosé vos objectifs hier 👏 </p>
       </div>

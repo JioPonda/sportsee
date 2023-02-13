@@ -85,7 +85,7 @@ export default function Dashboard() {
             <div className="dashboard_left_bottom">
               <Session sessions={averageSessions.sessions} />
               <Performance performance={performance} />
-              <Score score={dataMain.todayScore} />
+              <Score score={dataMain.score} />
             </div>
           </div>
           <div className="dashboard_right">
