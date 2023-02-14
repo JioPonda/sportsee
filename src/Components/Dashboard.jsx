@@ -66,6 +66,7 @@ export default function Dashboard() {
       // if (!request) return alert("data error");
       request.data.data.forEach((data) => {
         data.kind = request.data.kind[data.kind];
+        data.value = console.log(data);
       });
       setPerformance(request.data);
     };
