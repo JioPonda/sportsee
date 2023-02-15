@@ -5,6 +5,10 @@
   align-items: center;
   height: 110vh;
   width: 5vw;
+  @media screen and (max-width: 1024px) {
+    width: 8vw;
+    height: 125vh;
+  }
 
   .navbar_left_icon {
     margin-top: 256px;
