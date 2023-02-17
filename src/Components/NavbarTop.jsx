@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../Image/logo_sportsee.png";
 
+//** Component for display the nav bar and the logo on top */
 const NavbarTop = () => {
   return (
     <header className="navbar_top">

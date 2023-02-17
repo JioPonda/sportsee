@@ -9,6 +9,7 @@ import {
   Bar,
 } from "recharts";
 
+// ** const for creat a Custom tooltip and display the data on mouse hover */
 const CustomTooltip = ({ payload, active }) => {
   if (active && payload && payload.length) {
     return (
@@ -21,7 +22,8 @@ const CustomTooltip = ({ payload, active }) => {
   return null;
 };
 
-function Activity({ activity }) {
+//** Component for display the user activity */
+export default function Activity({ activity }) {
   const Dot = <i className="fa-solid fa-circle Dot"></i>;
   const Dot2 = <i className="fa-solid fa-circle Dot2"></i>;
 
@@ -38,7 +40,6 @@ function Activity({ activity }) {
         {Dot2}
         <p className="cal">Calories brûlées(Kcal)</p>
       </div>
-      {/* <div className="weigth_chart"> */}
       <ResponsiveContainer>
         <BarChart data={activity}>
           <CartesianGrid strokeDasharray="3 3" vertical={false} />
@@ -99,5 +100,3 @@ function Activity({ activity }) {
     </div>
   );
 }
-
-export default Activity;

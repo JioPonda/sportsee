@@ -7,6 +7,7 @@ import {
   Legend,
 } from "recharts";
 
+//** Const to create a custom legend to display the score and value of these */
 const CustomizedLegend = ({ payload }) => {
   if (payload && payload.length) {
     return (
@@ -20,7 +21,7 @@ const CustomizedLegend = ({ payload }) => {
   return null;
 };
 
-// Component for performance user
+//** Component for display the user Score */
 
 function Score({ score }) {
   const scorePercent = score * 100;

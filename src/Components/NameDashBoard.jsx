@@ -1,6 +1,6 @@
 import React from "react";
 
-// Component for the name of user
+//** Component for display the user name */
 const NameDashBoard = ({ user }) => {
   return (
     <div className="name_dashboard">

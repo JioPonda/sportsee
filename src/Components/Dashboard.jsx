@@ -8,6 +8,7 @@ import Performance from "./Performance";
 import InfoCard from "./InfosCard";
 import { getData } from "../Data/getData";
 
+//** Component for display all of the data user */
 export default function Dashboard() {
   const [dataMain, setDataMain] = useState([]);
   const [averageSessions, setAverageSessions] = useState([]);

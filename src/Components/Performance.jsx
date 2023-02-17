@@ -7,9 +7,9 @@ import {
   Radar,
 } from "recharts";
 
-// Component for performance user
+//** Component for display the user performance */
 
-function Performance(perf) {
+export default function Performance(perf) {
   const performance = perf.performance;
   return (
     <div className="radar">
@@ -38,5 +38,3 @@ function Performance(perf) {
     </div>
   );
 }
-
-export default Performance;

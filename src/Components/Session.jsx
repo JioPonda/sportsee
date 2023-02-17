@@ -1,7 +1,7 @@
 import { ResponsiveContainer, LineChart, XAxis, Line } from "recharts";
 import Ofilter from "../Image/session_filter.png";
 
-// Component for sessions user
+//** Component for display the user session */
 function Session({ sessions }) {
   return (
     <div className="objectif">

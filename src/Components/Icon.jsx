@@ -1,5 +1,6 @@
 import React from "react";
 
+/** component for select the good icon for the infoCard component */
 function Icon({ IconCalories, IconProteins, IconGlucides, IconLipides }) {
   return (
     <>

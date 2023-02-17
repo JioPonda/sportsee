@@ -4,7 +4,7 @@ import SwimmingIcon from "../Icon/swimming_icon.png";
 import BikeIcon from "../Icon/bike_icon.png";
 import DumbbellIcon from "../Icon/dumbbell_icon.png";
 
-// Component for the left bar with the sports icon
+//** Component for display the left bar with the sports icon */
 const NavbarLeft = () => {
   return (
     <div className="navbar_left">
