@@ -7,7 +7,7 @@ import { QueryClient, QueryClientProvider } from "react-query";
 
 const queryClient = new QueryClient();
 
-// Component for display the userboard
+//** Component for display the userboard */
 function UserBoard() {
   const { userId } = useParams();
   return (

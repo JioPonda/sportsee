@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-// Component for display the user selection
+//** Component for display the user selection */
 function Home() {
   return (
     <div>
