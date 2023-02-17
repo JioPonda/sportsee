@@ -1,8 +1,9 @@
 import { ResponsiveContainer, LineChart, XAxis, Line } from "recharts";
 import Ofilter from "../Image/session_filter.png";
+import PropTypes from "prop-types";
 
 //** Component for display the user session */
-function Session({ sessions }) {
+export default function Session({ sessions }) {
   return (
     <div className="objectif">
       <img src={Ofilter} alt="" className="objectif_filter" />
@@ -35,4 +36,6 @@ function Session({ sessions }) {
   );
 }
 
-export default Session;
+Session.propTypes = {
+  sessions: PropTypes.array,
+};

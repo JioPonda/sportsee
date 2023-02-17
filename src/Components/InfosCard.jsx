@@ -4,7 +4,7 @@ import IconCal from "../Icon/calories_icon.png";
 import IconProt from "../Icon/protein_icon.png";
 import IconGlu from "../Icon/carbs_icon.png";
 import IconLip from "../Icon/fat_icon.png";
-
+import PropTypes from "prop-types";
 // ** Component for display the right side card with icon and information */
 export default function InfoCard({ keyData }) {
   return (
@@ -41,3 +41,7 @@ export default function InfoCard({ keyData }) {
     </>
   );
 }
+
+InfoCard.propTypes = {
+  data: PropTypes.object,
+};

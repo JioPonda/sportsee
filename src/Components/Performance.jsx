@@ -6,7 +6,7 @@ import {
   PolarAngleAxis,
   Radar,
 } from "recharts";
-
+import PropTypes from "prop-types";
 //** Component for display the user performance */
 
 export default function Performance(perf) {
@@ -38,3 +38,7 @@ export default function Performance(perf) {
     </div>
   );
 }
+
+Performance.propTypes = {
+  performance: PropTypes.object,
+};

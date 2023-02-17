@@ -8,6 +8,7 @@ import {
   YAxis,
   Bar,
 } from "recharts";
+import PropTypes from "prop-types";
 
 // ** const for creat a Custom tooltip and display the data on mouse hover */
 const CustomTooltip = ({ payload, active }) => {
@@ -100,3 +101,7 @@ export default function Activity({ activity }) {
     </div>
   );
 }
+
+Activity.propTypes = {
+  activity: PropTypes.array,
+};

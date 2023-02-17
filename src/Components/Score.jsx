@@ -6,7 +6,7 @@ import {
   PolarAngleAxis,
   Legend,
 } from "recharts";
-
+import PropTypes from "prop-types";
 //** Const to create a custom legend to display the score and value of these */
 const CustomizedLegend = ({ payload }) => {
   if (payload && payload.length) {
@@ -67,5 +67,9 @@ function Score({ score }) {
     </div>
   );
 }
+
+Score.propTypes = {
+  score: PropTypes.number,
+};
 
 export default Score;

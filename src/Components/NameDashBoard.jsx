@@ -1,7 +1,8 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 //** Component for display the user name */
-const NameDashBoard = ({ user }) => {
+export default function NameDashBoard({ user }) {
   return (
     <div className="name_dashboard">
       <div>
@@ -13,6 +14,8 @@ const NameDashBoard = ({ user }) => {
       </div>
     </div>
   );
-};
+}
 
-export default NameDashBoard;
+NameDashBoard.propTypes = {
+  name: PropTypes.string,
+};
