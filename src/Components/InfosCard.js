@@ -5,7 +5,23 @@ import IconProt from "../Icon/protein_icon.png";
 import IconGlu from "../Icon/carbs_icon.png";
 import IconLip from "../Icon/fat_icon.png";
 import PropTypes from "prop-types";
-// ** Component for display the right side card with icon and information */
+
+/**
+ * Component for display the right side card with icon and information 
+ * 
+ * @param {objet} keyData
+ * @example
+ * const keyData = {
+          calorieCount: 1930,
+          proteinCount: 155,
+          carbohydrateCount: 290,
+          lipidCount: 50
+      }
+ * return (
+ *   <Infocard data={keyData} /> 
+ * )
+ */
+
 export default function InfoCard({ keyData }) {
   return (
     <>

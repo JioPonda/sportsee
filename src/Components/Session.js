@@ -2,7 +2,47 @@ import { ResponsiveContainer, LineChart, XAxis, Line } from "recharts";
 import Ofilter from "../Image/session_filter.png";
 import PropTypes from "prop-types";
 
-//** Component for display the user session */
+/**
+ * Component for display the user session.
+ *
+ * @param {aray} sessions
+ * 
+ * @example
+ * const sessions = [
+          {
+              day: 1,
+              sessionLength: 30
+          },
+          {
+              day: 2,
+              sessionLength: 23
+          },
+          {
+              day: 3,
+              sessionLength: 45
+          },
+          {
+              day: 4,
+              sessionLength: 50
+          },
+          {
+              day: 5,
+              sessionLength: 0
+          },
+          {
+              day: 6,
+              sessionLength: 0
+          },
+          {
+              day: 7,
+              sessionLength: 60
+          }
+      ]
+ * return (
+ *   <Session sessions={sessions} />
+ * )
+ */
+
 export default function Session({ sessions }) {
   return (
     <div className="objectif">

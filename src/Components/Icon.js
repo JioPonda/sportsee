@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+
 /** component for select the good icon for the infoCard component */
 export default function Icon({
   IconCalories,

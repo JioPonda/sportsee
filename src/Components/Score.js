@@ -7,6 +7,18 @@ import {
   Legend,
 } from "recharts";
 import PropTypes from "prop-types";
+
+/**
+ * Component for display the user Score
+ *
+ * @param {number} Score
+ * @example
+ * const score = 0.12
+ * return (
+ *   <Score score={score} />
+ * )
+ */
+
 //** Const to create a custom legend to display the score and value of these */
 const CustomizedLegend = ({ payload }) => {
   if (payload && payload.length) {
@@ -20,8 +32,6 @@ const CustomizedLegend = ({ payload }) => {
   }
   return null;
 };
-
-//** Component for display the user Score */
 
 function Score({ score }) {
   const scorePercent = score * 100;

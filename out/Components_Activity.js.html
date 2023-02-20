@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: Components/Activity.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: Components/Activity.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React from "react";
+import {
+  Tooltip,
+  ResponsiveContainer,
+  BarChart,
+  CartesianGrid,
+  XAxis,
+  YAxis,
+  Bar,
+} from "recharts";
+import PropTypes from "prop-types";
+
+/**
+ * Component for display the user activity.
+ * 
+ * @param {array} activity
+ *
+ * @example
+ * const activity =  [
+          {
+              day: '2020-07-01',
+              kilogram: 70,
+              calories: 240
+          },
+          {
+              day: '2020-07-02',
+              kilogram: 69,
+              calories: 220
+          },
+          {
+              day: '2020-07-03',
+              kilogram: 70,
+              calories: 280
+          },
+          {
+              day: '2020-07-04',
+              kilogram: 70,
+              calories: 500
+          },
+          {
+              day: '2020-07-05',
+              kilogram: 69,
+              calories: 160
+          },
+          {
+              day: '2020-07-06',
+              kilogram: 69,
+              calories: 162
+          },
+          {
+              day: '2020-07-07',
+              kilogram: 69,
+              calories: 390
+          }
+      ]
+ * return (
+ *   &lt;Activity activity={activity} />
+ * )
+ */
+
+// ** const for creat a Custom tooltip and display the data on mouse hover */
+const CustomTooltip = ({ payload, active }) => {
+  if (active &amp;&amp; payload &amp;&amp; payload.length) {
+    return (
+      &lt;div className="custom-tooltip-line">
+        &lt;p className="desc">{payload[0].value + "kg"}&lt;/p>
+        &lt;p className="desc">{payload[1].value + "Kcal"}&lt;/p>
+      &lt;/div>
+    );
+  }
+  return null;
+};
+
+export default function Activity({ activity }) {
+  const Dot = &lt;i className="fa-solid fa-circle Dot">&lt;/i>;
+  const Dot2 = &lt;i className="fa-solid fa-circle Dot2">&lt;/i>;
+
+  const formatXAxis = (item, i) => {
+    return i + 1;
+  };
+
+  return (
+    &lt;div className="activity">
+      &lt;div className="activity_text">
+        &lt;h2>Activité quotidienne&lt;/h2>
+        {Dot}
+        &lt;p className="kg">Poids(kg)&lt;/p>
+        {Dot2}
+        &lt;p className="cal">Calories brûlées(Kcal)&lt;/p>
+      &lt;/div>
+      &lt;ResponsiveContainer>
+        &lt;BarChart data={activity}>
+          &lt;CartesianGrid strokeDasharray="3 3" vertical={false} />
+          &lt;XAxis
+            dataKey="day"
+            tickFormatter={formatXAxis}
+            axisLine={false}
+            tickLine={false}
+            domain={["dataMin", "dataMax"]}
+            tick={{ stroke: "#9B9EAC" }}
+          />
+
+          &lt;YAxis
+            orientation="right"
+            tickCount={3}
+            domain={["dataMin - 1", "dataMax"]}
+            dataKey="kilogram"
+            axisLine={false}
+            tickLine={false}
+            tickMargin={30}
+            tick={{ stroke: "#9B9EAC" }}
+          />
+          &lt;YAxis
+            tickCount={6}
+            domain={[0, 600]}
+            dataKey="calories"
+            axisLine={false}
+            tickLine={false}
+            tick={false}
+            hide={true}
+            yAxisId="cl"
+          />
+          &lt;Tooltip
+            cursor={{ fill: "#C4C4C4", opacity: "0.5" }}
+            wrapperStyle={{ outline: "none" }}
+            content={&lt;CustomTooltip />}
+            offset={35}
+          />
+
+          &lt;Bar
+            dataKey="kilogram"
+            fill="#282D30"
+            radius={[10, 10, 0, 0]}
+            unit="kg"
+            barSize={10}
+          />
+          &lt;Bar
+            dataKey="calories"
+            fill="#E60000"
+            radius={[10, 10, 0, 0]}
+            unit="kCal"
+            yAxisId="cl"
+            barSize={10}
+          />
+        &lt;/BarChart>
+      &lt;/ResponsiveContainer>
+      {/* &lt;/div> */}
+    &lt;/div>
+  );
+}
+
+Activity.propTypes = {
+  activity: PropTypes.array,
+};
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#CustomTooltip">CustomTooltip</a></li><li><a href="global.html#CustomizedLegend">CustomizedLegend</a></li><li><a href="global.html#getData">getData</a></li><li><a href="global.html#getUserActivity">getUserActivity</a></li><li><a href="global.html#getUserAverageSessions">getUserAverageSessions</a></li><li><a href="global.html#getUserInfos">getUserInfos</a></li><li><a href="global.html#getUserPerformance">getUserPerformance</a></li><li><a href="global.html#useApi">useApi</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Mon Feb 20 2023 13:52:06 GMT+0100 (heure normale d’Europe centrale)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

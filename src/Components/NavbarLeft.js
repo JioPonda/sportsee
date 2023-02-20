@@ -3,7 +3,7 @@ import MeditationIcon from "../Icon/meditation_icon.png";
 import SwimmingIcon from "../Icon/swimming_icon.png";
 import BikeIcon from "../Icon/bike_icon.png";
 import DumbbellIcon from "../Icon/dumbbell_icon.png";
-import PropTypes from "prop-types";
+
 //** Component for display the left bar with the sports icon */
 const NavbarLeft = () => {
   return (

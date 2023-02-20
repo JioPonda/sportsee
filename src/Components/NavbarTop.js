@@ -1,6 +1,5 @@
 import React from "react";
 import Logo from "../Image/logo_sportsee.png";
-import PropTypes from "prop-types";
 //** Component for display the nav bar and the logo on top */
 const NavbarTop = () => {
   return (
